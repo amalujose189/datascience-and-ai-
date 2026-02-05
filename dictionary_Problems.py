@@ -64,3 +64,8 @@ print(student.get("english"))  # Output: None
 print(student.get("english", "Not Available"))  # Output: Not Available
 print(student.get("history", 0))  # Output: 0
 
+'''Iterate Through Dictionary
+Print all keys and values from a dictionary using a for loop.'''
+
+for key,value in courses.items():
+    print(key," : ",value)
