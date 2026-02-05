@@ -39,3 +39,20 @@ def show_fruits(fruits):
 show_fruits(["apple","banana","cherry"])
 #list remains a list inside the function
 
+#return statement
+def multiply(x):
+  return x*5
+result=multiply(4)
+print("Result :",result)
+
+#return send value back to the function
+
+#pass statement
+def future_function():
+  pass  
+#function definition cannot be empty,pass used as placeholder
+
+#lambda function
+double=lambda x:x*2
+print("Double of 5 is",double(10))
+#small anonymous one line function
