@@ -69,3 +69,9 @@ Print all keys and values from a dictionary using a for loop.'''
 
 for key,value in courses.items():
     print(key," : ",value)
+
+'''Copy Dictionary
+
+Create a copy of a dictionary and show that changes in the copied dictionary do not affect the original.'''
+dict1={"a":1,"b":2,"c":3}
+dict2=dict1.copy()

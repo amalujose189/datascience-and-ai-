@@ -32,11 +32,14 @@ even_or_odd(2)'''
 greatorthab(10,20,30)
 greatorthab(50,20,30)
 greatorthab(10,70,30)
-'''
-
 
 def uppercase(word):
     print(word.upper())
-
 uppercase("amalu jose")
+
+'''
+
+
+
+
 
