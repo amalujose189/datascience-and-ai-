@@ -32,3 +32,15 @@ mapped=list(map(lambda x:x[-1],list1))
 #last letter of each string in list1
 
 print(mapped)
+
+
+'''
+program to check if word is palindrome or not using lambda function
+word.reverse() -> x[::-1] - Strings don't have .reverse() method. Use slicing to reverse.
+Use the parameter x - The lambda now accepts x and uses it in the condition.
+Call the lambda - Changed print(palindrome) to print(palindrome(word)) to actually execute the function.
+'''
+
+word=input("enter an word:")
+palindrome=lambda x:"palindrome" if x==x[::-1] else "not palindrome"
+print(palindrome(word))#calling the lambda function
