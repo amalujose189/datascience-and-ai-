@@ -70,3 +70,67 @@ print("Even →",even_lst)
 print("Odd →",odd_lst)
 print("5-------------------------------------------------------")
 
+''''
+
+🔹 SET – Coding Questions
+1️⃣ Find common elements (intersection)
+set1 = {1, 2, 3}
+set2 = {2, 3, 4}
+
+
+➡ Output: {2, 3}'''
+set1 = {1, 2, 3}
+set2 = {2, 3, 4}
+intersection=set1.intersection(set2)
+print(intersection)
+print("1-------------------------------------------------------")
+'''2 Remove duplicates from list using set
+lst = [1, 2, 2, 3, 3]'''
+lst = [1, 2, 2, 3, 3]
+unique_lst=set(lst)
+print(unique_lst)
+print("2-------------------------------------------------------")
+'''5️⃣ Check if two sets are disjoint
+set1 = {1, 2}
+set2 = {3, 4}'''
+set1 = {1, 2}
+set2 = {3, 4}
+disjoint=set1.isdisjoint(set2)
+print(disjoint)
+print("5-------------------------------------------------------")
+'''
+1️⃣ Find maximum and minimum in a tuple
+t = (5, 2, 9, 1)
+'''
+t = (5, 2, 9, 1)
+max_value=max(t)
+min_value=min(t)
+print("Maximum:",max_value)
+print("Minimum:",min_value)
+'''
+2️⃣ Convert tuple to list and list to tuple
+t = (1, 2, 3)
+'''
+t = (1, 2, 3)
+list1=list(t)
+print("List:",list1)
+tuple1=tuple(list1)
+print("Tuple:",tuple1)
+'''4️⃣ Unpack tuple elements
+t = (10, 20, 30)'''
+t = (10, 20, 30)
+print("Tuple:",t)
+a,b,c=t
+print("Unpacked values:",a,b,c)
+
+'''
+5️⃣ Check if element exists in tuple
+t = (1, 2, 3, 4)
+'''
+
+t = (1, 2, 3, 4)
+element=5
+if element in t:
+    print(element,"exists in tuple")
+else:
+    print(element,"does not exist in tuple") 
