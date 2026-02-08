@@ -41,6 +41,26 @@ Use the parameter x - The lambda now accepts x and uses it in the condition.
 Call the lambda - Changed print(palindrome) to print(palindrome(word)) to actually execute the function.
 '''
 
+#method1
+
 word=input("enter an word:")
 palindrome=lambda x:"palindrome" if x==x[::-1] else "not palindrome"
 print(palindrome(word))#calling the lambda function
+
+
+word2=input("enter  word2:")
+print(word2.count("b"))
+'''
+word2 is a string, and strings are iterable.
+
+So Python treats it like this:
+
+"madam" → ['m', 'a', 'd', 'a', 'm']
+'''
+word2=["madam","hello","racecar"]
+palindrome1=list(map(lambda x:"palindrome" if x==x[::-1] else "not palindrome",word2))
+print(palindrome1)
+palindrome2=list(map(lambda x: x==x[::-1],word2))
+print(palindrome2)
+palindrome3=list(filter(lambda x:x==x[::-1],word2))
+print(palindrome3)
